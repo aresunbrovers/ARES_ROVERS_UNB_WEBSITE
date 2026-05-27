@@ -20,4 +20,4 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ```bash
 npm run build && npx gh-pages -d out -t
-``
+``` 
