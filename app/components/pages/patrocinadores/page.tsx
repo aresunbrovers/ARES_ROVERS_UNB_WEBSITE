@@ -1,4 +1,4 @@
-import MaintenanceNotice from "../components/molecules/MaintenanceNotice";
+import MaintenanceNotice from "../../molecules/MaintenanceNotice";
 
 export default function Patrocinadores() {
   return <MaintenanceNotice />;
