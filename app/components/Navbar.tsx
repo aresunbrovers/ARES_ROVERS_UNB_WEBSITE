@@ -70,7 +70,9 @@ export default function Navbar() {
 
         <div className="hidden items-center gap-3 justify-self-end md:flex">
           <Link
-            href="/apoie"
+            href="https://www.linkedin.com/company/aresunb/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-full border border-white/30 px-5 py-2 text-sm font-medium text-white transition-colors hover:bg-white hover:text-black"
           >
             Apoie-nos
@@ -123,7 +125,9 @@ export default function Navbar() {
           ))}
           <li className="pt-6">
             <Link
-              href="/apoie"
+              href="https://www.linkedin.com/company/aresunb/"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="block rounded-full border border-white/30 px-5 py-3 text-center text-sm font-medium text-white hover:bg-white hover:text-black"
             >
