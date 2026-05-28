@@ -1,5 +1,0 @@
-1:"$Sreact.fragment"
-2:I[97367,["/ARES_ROVERS_UNB_WEBSITE/_next/static/chunks/0v2-zjk4er2z2.js","/ARES_ROVERS_UNB_WEBSITE/_next/static/chunks/0d3shmwh5_nmn.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"flex flex-1 items-center justify-center bg-white px-6 pb-12 pt-24 dark:bg-black","children":["$","h1",null,{"className":"text-center text-3xl uppercase tracking-wide text-black sm:text-4xl lg:text-5xl dark:text-white","style":{"fontFamily":"var(--font-russo-one)"},"children":"Página em Manutenção"}]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"IDsMQcEVCq5kfVHXpEHvw"}
-4:null
