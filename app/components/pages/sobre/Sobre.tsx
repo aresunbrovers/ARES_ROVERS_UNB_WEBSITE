@@ -5,12 +5,12 @@ function Stat({ value, label }: { value: string; label: string }) {
   return (
     <div>
       <dt
-        className="text-3xl text-[#4c1d95] sm:text-4xl"
+        className="text-3xl text-[#D4A017] sm:text-4xl"
         style={{ fontFamily: "var(--font-russo-one)" }}
       >
         {value}
       </dt>
-      <dd className="mt-1 text-xs uppercase tracking-wider text-black/60">
+      <dd className="mt-1 text-xs uppercase tracking-wider text-white/50">
         {label}
       </dd>
     </div>
@@ -21,53 +21,54 @@ export default function Sobre() {
   return (
     <section
       id="sobre"
-      className="relative flex min-h-screen w-full items-center overflow-hidden bg-white py-24 text-black"
+      className="flex min-h-screen w-full flex-col overflow-hidden text-white md:flex-row"
     >
-      <div className="absolute inset-y-0 left-0 w-full md:w-1/2 lg:w-3/5">
+      {/* ── Coluna da imagem ── */}
+      <div className="relative h-72 w-full flex-shrink-0 sm:h-96 md:h-auto md:flex-1">
         <Image
           src={equipeImg}
           alt="Equipe Ares Rovers reunida na UnB"
           fill
           className="object-cover object-[center_70%]"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-white" />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/30 md:from-transparent md:to-transparent" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_85%,rgba(76,29,149,0.25),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_5%_10%,rgba(212,160,23,0.18),transparent_50%)]" />
+        {/* Gradiente de transição: transparente → preto, só na borda direita (desktop) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/80 hidden md:block" />
+        {/* Gradiente de transição: transparente → preto, borda inferior (mobile) */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/90 md:hidden" />
+        {/* Acento roxo sutil */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(76,29,149,0.3),transparent_50%)]" />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-7xl justify-end px-6 lg:px-10">
-        <div className="max-w-xl">
-          <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#4c1d95]">
-            Sobre nós
-          </span>
-          <h2
-            className="mt-4 text-4xl uppercase leading-tight text-black sm:text-5xl lg:text-6xl"
-            style={{ fontFamily: "var(--font-russo-one)" }}
-          >
-            Engenharia que <span className="text-[#4c1d95]">conquista</span>{" "}
-            outros mundos
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-black/75 sm:text-lg">
-            A ARES (Aeroespace Rover Exploration System) é a equipe oficial de
-            Rovers da Universidade de Brasília, vinculada à Engenharia
-            Aeroespacial da UnB. Nosso objetivo é desenvolver tecnologias
-            voltadas à exploração planetária por meio da elaboração de veículos
-            robóticos capazes de operar em terrenos análogos a superfícies
-            extraterrestres.
-          </p>
-          <p className="mt-4 text-base leading-relaxed text-black/75 sm:text-lg">
-            Atuamos de forma multidisciplinar nas áreas de estruturas,
-            dinâmica, eletrônica, telecomunicações e sistemas embarcados,
-            integrando ensino, pesquisa e inovação aplicada.
-          </p>
+      {/* ── Coluna do texto (fundo escuro) ── */}
+      <div className="flex w-full flex-col justify-center bg-black px-8 py-16 md:w-[46%] md:flex-none md:py-24 lg:px-14">
+        <span className="text-sm font-semibold uppercase tracking-[0.3em] text-[#D4A017]">
+          Sobre nós
+        </span>
+        <h2
+          className="mt-4 text-4xl uppercase leading-tight sm:text-5xl lg:text-[3.25rem]"
+          style={{ fontFamily: "var(--font-russo-one)" }}
+        >
+          Engenharia que{" "}
+          <span className="text-[#4c1d95]">conquista</span> outros mundos
+        </h2>
+        <p className="mt-6 text-base leading-relaxed text-white/70 sm:text-lg">
+          A ARES (Aerospace Rover Exploration System) é a equipe oficial de
+          Rovers da Universidade de Brasília, vinculada à Engenharia
+          Aeroespacial da UnB. Nosso objetivo é desenvolver veículos
+          robóticos capazes de operar em terrenos análogos a superfícies
+          extraterrestres.
+        </p>
+        <p className="mt-4 text-base leading-relaxed text-white/70 sm:text-lg">
+          Atuamos de forma multidisciplinar nas áreas de estruturas,
+          dinâmica, eletrônica, telecomunicações e sistemas embarcados,
+          integrando ensino, pesquisa e inovação aplicada.
+        </p>
 
-          <dl className="mt-8 grid grid-cols-3 gap-4 border-t border-black/10 pt-6">
-            <Stat value="5+" label="Subsistemas" />
-            <Stat value="30+" label="Membros" />
-            <Stat value="∞" label="Ambições" />
-          </dl>
-        </div>
+        <dl className="mt-8 grid grid-cols-3 gap-6 border-t border-white/10 pt-6">
+          <Stat value="5+" label="Subsistemas" />
+          <Stat value="30+" label="Membros" />
+          <Stat value="∞" label="Ambições" />
+        </dl>
       </div>
     </section>
   );
