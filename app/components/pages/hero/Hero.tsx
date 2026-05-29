@@ -29,7 +29,7 @@ export default function Hero() {
           className="text-4xl uppercase tracking-wide text-white sm:text-5xl lg:text-7xl"
           style={{ fontFamily: "var(--font-russo-one)" }}
         >
-          Bem-vindo ao ARES
+          Bem-vindo a ARES
         </h1>
         <p className="mt-4 max-w-xl text-base text-white/85 sm:text-lg">
           Ares Rovers UnB — A equipe oficial de Rovers da UnB.
