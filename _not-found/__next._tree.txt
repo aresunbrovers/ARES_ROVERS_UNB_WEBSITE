@@ -1,2 +1,2 @@
-:HL["/ARES_ROVERS_UNB_WEBSITE/_next/static/chunks/0gy-7meuxgv--.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"VfkhAHByTcVlko3sz1xlp"}
+:HL["/ARES_ROVERS_UNB_WEBSITE/_next/static/chunks/117k5ohlzhyz1.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"R1zCDzu4CgamAo9Xes12a"}
