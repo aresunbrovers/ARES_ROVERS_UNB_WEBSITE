@@ -25,8 +25,8 @@ const sociais = [
   },
   {
     nome: "E-mail",
-    handle: "ares.unb@gmail.com",
-    href: "mailto:ares.unb@gmail.com",
+    handle: "ares.unb.rovers@gmail.com",
+    href: "mailto:ares.unb.rovers@gmail.com",
     icone: (
       <svg
         viewBox="0 0 24 24"
@@ -79,7 +79,7 @@ export default function Contato() {
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
-            href="mailto:ares.unb@gmail.com"
+            href="mailto:ares.unb.rovers@gmail.com"
             className="rounded-full bg-[#D4A017] px-8 py-3 text-sm font-semibold text-black transition hover:bg-[#F5C842]"
           >
             Fale conosco
